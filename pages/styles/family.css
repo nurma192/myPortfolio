@@ -23,7 +23,7 @@
 }
 .family-members{
     display: flex;
-    width: calc(4000px + 200px);
+    width: calc(3200px + 200px);
     margin-top: 50px;
     gap: 20px;
 }

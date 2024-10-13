@@ -11,22 +11,23 @@
 </head>
 <body>
 
-<div class="burger-btn">
+<div class="burger-btn"><!-- Burger button, when header not visible this button will be visible -->
 	<svg class="burger__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368">
 		<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
 	</svg>
 </div>
-<header class="header">
-	<nav class="header__nav-bar">
-		<ul class="header__pages">
-			<li><a href="index.html" class="header__page-link">Home</a></li>
-			<li><a href="#" class="header__page-link active-color">Family</a></li>
+<header class="header"> <!-- Header -->
+	<nav class="header__nav-bar"> <!-- Header navigation bar -->
+		<ul class="header__pages"> <!-- Header navigation bar links list -->
+			<li><a href="index.html" class="header__page-link">Home</a></li>  <!-- Header navigation bar link -->
+			<li><a href="family.html" class="header__page-link">Family</a></li>
 			<li><a href="education.html" class="header__page-link">Education</a></li>
 			<li><a href="hobbies.html" class="header__page-link">Hobbies</a></li>
-			<li><a href="contact.html" class="header__page-link">Contacts</a></li>
+			<li><a href="#" class="header__page-link active-color">Contacts</a></li>
 		</ul>
 	</nav>
 </header>
+
 
 <section class="section family">
 	<div class="container family-container">
@@ -82,14 +83,42 @@
 					<div class="member-card__images">
 						<img class="member-big-img" src="../images/hero-img.JPG" alt="">
 						<div class="small-images">
+							<img class=member-small-img src="../images/ulzhan4.jpg" alt="">
+							<img class=member-small-img src="../images/mam1.jpg" alt="">
+							<img class=member-small-img src="../images/hero-img.JPG" alt="">
+						</div>
+					</div>
+					<div class="member-card-text">
+						<h3 class="member-name">Guliyaim Ibatbekova</h3>
+						<p class="member-about">Sister</p>
+					</div>
+				</div>
+				<div class="family-member__card">
+					<div class="member-card__images">
+						<img class="member-big-img" src="../images/hero-img.JPG" alt="">
+						<div class="small-images">
 							<img class=member-small-img src="../images/hero-img.JPG" alt="">
 							<img class=member-small-img src="../images/hero-img.JPG" alt="">
 							<img class=member-small-img src="../images/hero-img.JPG" alt="">
 						</div>
 					</div>
 					<div class="member-card-text">
-						<h3 class="member-name">Kenges Nurmukhamet</h3>
-						<p class="member-about">Me</p>
+						<h3 class="member-name">Aqtolqyn Ibatbekova</h3>
+						<p class="member-about">Sister</p>
+					</div>
+				</div>
+				<div class="family-member__card">
+					<div class="member-card__images">
+						<img class="member-big-img" src="../images/hero-img.JPG" alt="">
+						<div class="small-images">
+							<img class=member-small-img src="../images/hero-img.JPG" alt="">
+							<img class=member-small-img src="../images/hero-img.JPG" alt="">
+							<img class=member-small-img src="../images/hero-img.JPG" alt="">
+						</div>
+					</div>
+					<div class="member-card-text">
+						<h3 class="member-name">Ainur Kenges</h3>
+						<p class="member-about">Sister</p>
 					</div>
 				</div>
 				<div class="family-member__card">
@@ -116,8 +145,8 @@
 						</div>
 					</div>
 					<div class="member-card-text">
-						<h3 class="member-name">Kenges Nurmukhamet</h3>
-						<p class="member-about">Me</p>
+						<h3 class="member-name">Kenges Beksultan</h3>
+						<p class="member-about">Little brother</p>
 					</div>
 				</div>
 				<div class="family-member__card">
@@ -130,36 +159,8 @@
 						</div>
 					</div>
 					<div class="member-card-text">
-						<h3 class="member-name">Kenges Nurmukhamet</h3>
-						<p class="member-about">Me</p>
-					</div>
-				</div>
-				<div class="family-member__card">
-					<div class="member-card__images">
-						<img class="member-big-img" src="../images/hero-img.JPG" alt="">
-						<div class="small-images">
-							<img class=member-small-img src="../images/hero-img.JPG" alt="">
-							<img class=member-small-img src="../images/hero-img.JPG" alt="">
-							<img class=member-small-img src="../images/hero-img.JPG" alt="">
-						</div>
-					</div>
-					<div class="member-card-text">
-						<h3 class="member-name">Kenges Nurmukhamet</h3>
-						<p class="member-about">Me</p>
-					</div>
-				</div>
-				<div class="family-member__card">
-					<div class="member-card__images">
-						<img class="member-big-img" src="../images/hero-img.JPG" alt="">
-						<div class="small-images">
-							<img class=member-small-img src="../images/hero-img.JPG" alt="">
-							<img class=member-small-img src="../images/hero-img.JPG" alt="">
-							<img class=member-small-img src="../images/hero-img.JPG" alt="">
-						</div>
-					</div>
-					<div class="member-card-text">
-						<h3 class="member-name">Kenges Nurmukhamet</h3>
-						<p class="member-about">Me</p>
+						<h3 class="member-name">Tolganai Ibatbek</h3>
+						<p class="member-about">Grand Mother</p>
 					</div>
 				</div>
 				<div class="family-member__card">
@@ -181,8 +182,8 @@
 	</div>
 </section>
 
-<footer class="footer">
-	<div class="container">
+<footer class="footer">  <!-- Footer -->
+	<div class="container">  <!-- Footer also has a container to keep the normal size -->
 		<div class="footer__content">
 			<div class="footer__text">
 				<h3 class="footer__title">Follow me</h3>

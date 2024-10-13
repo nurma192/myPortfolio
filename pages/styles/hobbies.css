@@ -35,3 +35,12 @@
 .hobby__exp b{
     font-size: 25px;
 }
+
+@media (max-width: 800px) {
+    .hobby__card{
+        flex-direction: column;
+    }
+    .hobby__img{
+        width: 100%;
+    }
+}
