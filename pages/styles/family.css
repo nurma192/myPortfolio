@@ -78,3 +78,51 @@
     height: 200px;
     object-fit: cover;
 }
+
+@media (max-width: 1441px) {
+    .family-members{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .family-member__card {
+        width: 500px;
+    }
+     .small-images{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .family__title {
+        font-size: 45px;
+        /*margin-bottom: 25px;*/
+    }
+    .family__about{
+        text-align: center;
+        margin:20px 10px;
+    }
+    .family-member__card{
+        width: 100%;
+        margin: 0 10px;
+    }
+    .big-fam-img{
+        width: 100%;
+    }
+
+}
+@media (max-width: 450px) {
+    .member-card__images{
+        flex-direction: column;
+    }
+    .small-images{
+        flex-direction: row;
+    }
+    .member-big-img{
+        height: 70%;
+    }
+    .member-small-img {
+        width: 30%;
+    }
+}

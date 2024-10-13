@@ -1,0 +1,37 @@
+.hobbies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.hobby__card{
+    width: 80%;
+    display: flex;
+    border:1px solid var(--light-gray);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+}
+/*.hobby__card::D*/
+.hobby__img{
+    width: 50%;
+    object-fit: cover;
+}
+.hobby__text{
+    display: flex;
+    flex-direction: column;
+}
+.hobby__title{
+    font-size: 45px;
+}
+.hobby__about{
+    font-size: 20px;
+
+}
+.hobby__exp{
+    font-size: 20px;
+}
+.hobby__exp b{
+    font-size: 25px;
+}
