@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*font-family: "Raleway", sans-serif;*/
+:root {
+    --primary-color: #b292ff;
+    --deep-black: #0c0c0e;
+    --dark-gray: #131315;
+    --light-gray: #dedede;
+    --deep-black-hover: #2e2e34;
+    --light-gray-hover: #adadad;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: var(--deep-black);
+    font-family: "Raleway", sans-serif;
+    color: var(--light-gray);
+    /*height: 2000px;*/
+}
+.text-white{
+    color: #fff;
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.border-primary{
+    border: 1px solid var(--primary-color);
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-btn {
+    background: var(--light-gray);
+    color: var(--deep-black);
+    padding: 12px 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px var(--light-gray) solid;
+    transition: .2s;
+
+}
+
+.transparent-btn {
+    background: transparent;
+    color: var(--light-gray);
+    padding: 12px 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px var(--light-gray) solid;
+    transition: .2s;
+}
+
+.transparent-btn:hover {
+    background: var(--deep-black-hover);
+}
+
+.white-btn:hover {
+    background: var(--light-gray-hover);
+}
+.primary__title{
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 60px 0 10px;
+    text-align: center;
+    text-shadow:0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+.burger-btn{
+    display: none;
+    width: 100%;
+    justify-content: start;
+    fill: #fff;
+}
+.burger__img{
+    fill: #fff;
+    width: 40px;
+    margin-left: 5px;
+
+}
+.header {
+    width: 100%;
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: center;
+    /*position: fixed;*/
+    /*backdrop-filter: blur(5px);*/
+    z-index: 2;
+}
+
+.header__nav-bar {
+    padding: 25px 50px;
+    border-radius: 50px;
+    background: var(--dark-gray);
+    width: 500px;
+    /*position: fixed;*/
+}
+
+.header__pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__page-link {
+    color: var(--light-gray);
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 17px;
+    padding: 20px;
+    transition: .2s;
+}
+
+.header__page-link:hover {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.active-color {
+    color: var(--primary-color);
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 100px 0 20px;
+}
+.footer__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: var(--dark-gray);
+    border-radius: 25px;
+}
+.footer__text{
+    margin-left: 20px;
+}
+.footer__title{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.footer__subtitle{
+    font-weight: 300;
+    color: var(--light-gray);
+    font-size: 19px;
+}
+.social-medias{
+    display: flex;
+}
+.social-media__link{
+    text-decoration: none;
+    padding: 20px 15px;
+    /*background: red;*/
+}
+.social-medias__svg{
+    fill: var(--primary-color);
+    width: 35px;
+    height: auto;
+    border-radius: 100%;
+    padding: 3px;
+    transition: .25s;
+}
+.social-media__link:hover .social-medias__svg{
+    fill: var(--dark-gray);
+    background: var(--primary-color);
+}
+@media (max-width: 1600px) {
+    .container {
+        width: 90%;
+    }
+
+
+}
+@media (max-width: 1100px) {
+
+}
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        display: none;
+    }
+    .burger-btn{
+        display: block;
+    }
+
+    .footer__title{
+        font-size: 22px;
+    }
+    .footer__subtitle{
+        font-size: 16px;
+    }
+    .footer__content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-media__link{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+    .transparent-btn {
+
+    }
+    .white-btn {
+
+    }
+}

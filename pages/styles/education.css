@@ -1,0 +1,78 @@
+.education-container{
+    align-items: center;
+}
+.education__title{
+    font-size: 40px;
+    margin: 20px 0;
+}
+.education__schools{
+    display: flex;
+    gap: 20px;
+}
+.school__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.school__img{
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+}
+.to-right-svg{
+    width: 50px;
+}
+.my-university{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-university__img{
+    width: 50%;
+    max-width: 1900px;
+    margin-bottom: 20px;
+}
+
+.events {
+    width: 70%;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--dark-gray);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.events__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.events th, .events__table td {
+
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.events__table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.events__table tr:hover {
+    background-color: var(--deep-black);
+}
+
+.events__table td {
+
+}
+
+@media (max-width: 600px) {
+    .events__table th, .events__table td {
+        padding: 10px;
+    }
+}
